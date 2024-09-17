@@ -1,4 +1,4 @@
-import Container from './components/Container'
+import HeroContainer from './components/HeroContainer'
 import Video from './components/Video'
 
 function App() {
@@ -8,12 +8,7 @@ function App() {
       <div className='flex flex-col text-red-500'>
         
         <div>
-          <Container className='absolute '>
-            <span>hello hello hello</span>
-            <span>hello hello hello</span>
-            <span>hello hello hello</span>
-            <span>hello hello hello</span>
-          </Container>
+          <HeroContainer className='absolute' />
           <Video videoPath='/public/hero.mp4' />
         </div>
 
