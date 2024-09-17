@@ -1,9 +1,12 @@
-import sample from './assets/hero.mp4'
 
-const Video = () => {
+interface VideoProps {
+  videoPath: string
+}
+
+const Video = ({ videoPath }: VideoProps) => {
   return (
     <video className='cl' autoPlay loop muted>
-        <source src={sample} type='video/mp4' />
+      <source src={videoPath} type='video/mp4' />
     </video>
   )
 }
